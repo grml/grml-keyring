@@ -1,2 +1,1 @@
-usr/share/grml-keyring/grml.sources etc/apt/sources.list.d/grml.sources
 usr/share/keyrings/grml-archive-keyring.pgp usr/share/keyrings/grml-archive-keyring.gpg

@@ -14,11 +14,6 @@ override_dh_auto_build: $(ARCHIVE_CERTS_SIGS)
 	cat keyrings/$(ARCHIVE_CERTS) | \
 	  $(SOP) armor >keyrings/$(ARCHIVE_KEYRING)
 
-# package should work also on older releases like lenny, which
-# don't have support for xz yet
-override_dh_builddeb:
-	dh_builddeb -- -Zgzip
-
 keyrings/%.asc: keyrings/%
 	$(SOP) verify $@ $(SIGNER_KEYRING) <keyrings/$*
 

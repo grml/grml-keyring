@@ -1,1 +1,0 @@
-grml-keyring: package-installs-apt-sources [etc/apt/sources.list.d/grml.sources]

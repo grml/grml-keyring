@@ -1,3 +1,20 @@
+grml-keyring (2025.03.10) unstable; urgency=medium
+
+  We reverted the APT sources configuration file change as shipped with
+  version 2025.02.24 due to user feedback (see e.g.
+  https://github.com/grml/grml-keyring/issues/18).
+
+  We therefore no longer ship the symlink
+  /etc/apt/sources.list.d/grml.sources pointing to
+  /usr/share/grml-keyring/grml.sources via the grml-keyring package.
+
+  If you still want to get the Grml APT repository enabled and managed
+  through the grml-keyring Debian package, you can run:
+
+    # ln -s /usr/share/grml-keyring/grml.sources /etc/apt/sources.list.d/grml.sources
+
+ -- Michael Prokop <mika@grml.org>  Mon, 10 Mar 2025 09:42:07 +0100
+
 grml-keyring (2025.02.24) unstable; urgency=medium
 
   This package now installs an APT sources configuration file.
