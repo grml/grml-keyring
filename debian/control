@@ -18,6 +18,7 @@ Package: grml-keyring
 Priority: optional
 Architecture: all
 Depends:
+ base-files (>= 9~),
  ${misc:Depends},
 Replaces:
  grml-debian-keyring (<< 2024.12.08),
