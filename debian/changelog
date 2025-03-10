@@ -1,3 +1,15 @@
+grml-keyring (2025.03.10) unstable; urgency=medium
+
+  * [9d567cb] Drop /etc/apt/sources.list.d/grml.sources
+  * [f167048] Provide debian/NEWS to announce grml.sources change
+  * [1533c4e] Provide debian/README.Debian to document grml.sources
+    situation
+  * [bddce22] d/rules: drop gzip workaround for older releases
+  * [8ebb3c0] d/control: depend on base-files package from stretch or
+    newer
+
+ -- Michael Prokop <mika@grml.org>  Mon, 10 Mar 2025 10:53:30 +0100
+
 grml-keyring (2025.02.27) unstable; urgency=medium
 
   * [66b38a3] Set Priority: optional for Debian (Closes: #1098936)
