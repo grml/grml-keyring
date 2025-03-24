@@ -1,3 +1,10 @@
+grml-keyring (2025.03.11) unstable; urgency=medium
+
+  [ Christopher Bock ]
+  * [c6bc4a0] apt.sources/grml.sources: fix apt-get --snapshot error
+
+ -- Chris Hofstaedtler <ch@grml.org>  Mon, 24 Mar 2025 11:28:11 +0100
+
 grml-keyring (2025.03.10) unstable; urgency=medium
 
   * [9d567cb] Drop /etc/apt/sources.list.d/grml.sources
