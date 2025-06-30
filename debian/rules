@@ -12,7 +12,7 @@ ARCHIVE_KEYRING = grml-archive-keyring.pgp
 override_dh_auto_build: $(ARCHIVE_CERTS_SIGS)
 	@echo $(ARCHIVE_CERTS_SIGS)
 	cat keyrings/$(ARCHIVE_CERTS) | \
-	  $(SOP) armor >keyrings/$(ARCHIVE_KEYRING)
+	  $(SOP) dearmor >keyrings/$(ARCHIVE_KEYRING)
 
 keyrings/%.asc: keyrings/%
 	$(SOP) verify $@ $(SIGNER_KEYRING) <keyrings/$*
